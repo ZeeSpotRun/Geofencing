@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A230C55919AE47420022D052 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A230C55819AE47420022D052 /* Foundation.framework */; };
+		A230C55B19AE47420022D052 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A230C55A19AE47420022D052 /* CoreGraphics.framework */; };
+		A230C55D19AE47420022D052 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A230C55C19AE47420022D052 /* UIKit.framework */; };
+		A230C56319AE47420022D052 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A230C56119AE47420022D052 /* InfoPlist.strings */; };
+		A230C56519AE47420022D052 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A230C56419AE47420022D052 /* main.m */; };
+		A230C56919AE47420022D052 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A230C56819AE47420022D052 /* AppDelegate.m */; };
+		A230C56B19AE47420022D052 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A230C56A19AE47420022D052 /* Images.xcassets */; };
+		A230C57219AE47420022D052 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A230C57119AE47420022D052 /* XCTest.framework */; };
+		A230C57319AE47420022D052 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A230C55819AE47420022D052 /* Foundation.framework */; };
+		A230C57419AE47420022D052 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A230C55C19AE47420022D052 /* UIKit.framework */; };
+		A230C57C19AE47420022D052 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A230C57A19AE47420022D052 /* InfoPlist.strings */; };
+		A230C57E19AE47420022D052 /* ZMGeofencingAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A230C57D19AE47420022D052 /* ZMGeofencingAppTests.m */; };
+		A230C58A19AE478B0022D052 /* GeofenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A230C58819AE478B0022D052 /* GeofenceViewController.m */; };
+		A230C58B19AE478B0022D052 /* GeofenceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A230C58919AE478B0022D052 /* GeofenceViewController.xib */; };
+		A230C58D19AE4A4D0022D052 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A230C58C19AE4A4D0022D052 /* CoreLocation.framework */; };
+		A230C58F19AE50E30022D052 /* Regions.plist in Resources */ = {isa = PBXBuildFile; fileRef = A230C58E19AE50E30022D052 /* Regions.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A230C57519AE47420022D052 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A230C54D19AE47410022D052 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A230C55419AE47420022D052;
+			remoteInfo = ZMGeofencingApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A230C55519AE47420022D052 /* ZMGeofencingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZMGeofencingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A230C55819AE47420022D052 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A230C55A19AE47420022D052 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A230C55C19AE47420022D052 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A230C56019AE47420022D052 /* ZMGeofencingApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZMGeofencingApp-Info.plist"; sourceTree = "<group>"; };
+		A230C56219AE47420022D052 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A230C56419AE47420022D052 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A230C56619AE47420022D052 /* ZMGeofencingApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZMGeofencingApp-Prefix.pch"; sourceTree = "<group>"; };
+		A230C56719AE47420022D052 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A230C56819AE47420022D052 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A230C56A19AE47420022D052 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A230C57019AE47420022D052 /* ZMGeofencingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZMGeofencingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A230C57119AE47420022D052 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A230C57919AE47420022D052 /* ZMGeofencingAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZMGeofencingAppTests-Info.plist"; sourceTree = "<group>"; };
+		A230C57B19AE47420022D052 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A230C57D19AE47420022D052 /* ZMGeofencingAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMGeofencingAppTests.m; sourceTree = "<group>"; };
+		A230C58719AE478B0022D052 /* GeofenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeofenceViewController.h; sourceTree = "<group>"; };
+		A230C58819AE478B0022D052 /* GeofenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeofenceViewController.m; sourceTree = "<group>"; };
+		A230C58919AE478B0022D052 /* GeofenceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GeofenceViewController.xib; sourceTree = "<group>"; };
+		A230C58C19AE4A4D0022D052 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A230C58E19AE50E30022D052 /* Regions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Regions.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A230C55219AE47420022D052 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A230C58D19AE4A4D0022D052 /* CoreLocation.framework in Frameworks */,
+				A230C55B19AE47420022D052 /* CoreGraphics.framework in Frameworks */,
+				A230C55D19AE47420022D052 /* UIKit.framework in Frameworks */,
+				A230C55919AE47420022D052 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A230C56D19AE47420022D052 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A230C57219AE47420022D052 /* XCTest.framework in Frameworks */,
+				A230C57419AE47420022D052 /* UIKit.framework in Frameworks */,
+				A230C57319AE47420022D052 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A230C54C19AE47410022D052 = {
+			isa = PBXGroup;
+			children = (
+				A230C55E19AE47420022D052 /* ZMGeofencingApp */,
+				A230C57719AE47420022D052 /* ZMGeofencingAppTests */,
+				A230C55719AE47420022D052 /* Frameworks */,
+				A230C55619AE47420022D052 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A230C55619AE47420022D052 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A230C55519AE47420022D052 /* ZMGeofencingApp.app */,
+				A230C57019AE47420022D052 /* ZMGeofencingAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A230C55719AE47420022D052 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A230C58C19AE4A4D0022D052 /* CoreLocation.framework */,
+				A230C55819AE47420022D052 /* Foundation.framework */,
+				A230C55A19AE47420022D052 /* CoreGraphics.framework */,
+				A230C55C19AE47420022D052 /* UIKit.framework */,
+				A230C57119AE47420022D052 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A230C55E19AE47420022D052 /* ZMGeofencingApp */ = {
+			isa = PBXGroup;
+			children = (
+				A230C56719AE47420022D052 /* AppDelegate.h */,
+				A230C56819AE47420022D052 /* AppDelegate.m */,
+				A230C58719AE478B0022D052 /* GeofenceViewController.h */,
+				A230C58819AE478B0022D052 /* GeofenceViewController.m */,
+				A230C58919AE478B0022D052 /* GeofenceViewController.xib */,
+				A230C56A19AE47420022D052 /* Images.xcassets */,
+				A230C55F19AE47420022D052 /* Supporting Files */,
+			);
+			path = ZMGeofencingApp;
+			sourceTree = "<group>";
+		};
+		A230C55F19AE47420022D052 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A230C56019AE47420022D052 /* ZMGeofencingApp-Info.plist */,
+				A230C56119AE47420022D052 /* InfoPlist.strings */,
+				A230C56419AE47420022D052 /* main.m */,
+				A230C56619AE47420022D052 /* ZMGeofencingApp-Prefix.pch */,
+				A230C58E19AE50E30022D052 /* Regions.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A230C57719AE47420022D052 /* ZMGeofencingAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A230C57D19AE47420022D052 /* ZMGeofencingAppTests.m */,
+				A230C57819AE47420022D052 /* Supporting Files */,
+			);
+			path = ZMGeofencingAppTests;
+			sourceTree = "<group>";
+		};
+		A230C57819AE47420022D052 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A230C57919AE47420022D052 /* ZMGeofencingAppTests-Info.plist */,
+				A230C57A19AE47420022D052 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A230C55419AE47420022D052 /* ZMGeofencingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A230C58119AE47420022D052 /* Build configuration list for PBXNativeTarget "ZMGeofencingApp" */;
+			buildPhases = (
+				A230C55119AE47420022D052 /* Sources */,
+				A230C55219AE47420022D052 /* Frameworks */,
+				A230C55319AE47420022D052 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZMGeofencingApp;
+			productName = ZMGeofencingApp;
+			productReference = A230C55519AE47420022D052 /* ZMGeofencingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A230C56F19AE47420022D052 /* ZMGeofencingAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A230C58419AE47420022D052 /* Build configuration list for PBXNativeTarget "ZMGeofencingAppTests" */;
+			buildPhases = (
+				A230C56C19AE47420022D052 /* Sources */,
+				A230C56D19AE47420022D052 /* Frameworks */,
+				A230C56E19AE47420022D052 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A230C57619AE47420022D052 /* PBXTargetDependency */,
+			);
+			name = ZMGeofencingAppTests;
+			productName = ZMGeofencingAppTests;
+			productReference = A230C57019AE47420022D052 /* ZMGeofencingAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A230C54D19AE47410022D052 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Zoe Malcolm";
+				TargetAttributes = {
+					A230C56F19AE47420022D052 = {
+						TestTargetID = A230C55419AE47420022D052;
+					};
+				};
+			};
+			buildConfigurationList = A230C55019AE47410022D052 /* Build configuration list for PBXProject "ZMGeofencingApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A230C54C19AE47410022D052;
+			productRefGroup = A230C55619AE47420022D052 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A230C55419AE47420022D052 /* ZMGeofencingApp */,
+				A230C56F19AE47420022D052 /* ZMGeofencingAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A230C55319AE47420022D052 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A230C56319AE47420022D052 /* InfoPlist.strings in Resources */,
+				A230C58B19AE478B0022D052 /* GeofenceViewController.xib in Resources */,
+				A230C58F19AE50E30022D052 /* Regions.plist in Resources */,
+				A230C56B19AE47420022D052 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A230C56E19AE47420022D052 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A230C57C19AE47420022D052 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A230C55119AE47420022D052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A230C56919AE47420022D052 /* AppDelegate.m in Sources */,
+				A230C58A19AE478B0022D052 /* GeofenceViewController.m in Sources */,
+				A230C56519AE47420022D052 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A230C56C19AE47420022D052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A230C57E19AE47420022D052 /* ZMGeofencingAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A230C57619AE47420022D052 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A230C55419AE47420022D052 /* ZMGeofencingApp */;
+			targetProxy = A230C57519AE47420022D052 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A230C56119AE47420022D052 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A230C56219AE47420022D052 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A230C57A19AE47420022D052 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A230C57B19AE47420022D052 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A230C57F19AE47420022D052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A230C58019AE47420022D052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A230C58219AE47420022D052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZMGeofencingApp/ZMGeofencingApp-Prefix.pch";
+				INFOPLIST_FILE = "ZMGeofencingApp/ZMGeofencingApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A230C58319AE47420022D052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZMGeofencingApp/ZMGeofencingApp-Prefix.pch";
+				INFOPLIST_FILE = "ZMGeofencingApp/ZMGeofencingApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A230C58519AE47420022D052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZMGeofencingApp.app/ZMGeofencingApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZMGeofencingApp/ZMGeofencingApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ZMGeofencingAppTests/ZMGeofencingAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A230C58619AE47420022D052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZMGeofencingApp.app/ZMGeofencingApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZMGeofencingApp/ZMGeofencingApp-Prefix.pch";
+				INFOPLIST_FILE = "ZMGeofencingAppTests/ZMGeofencingAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A230C55019AE47410022D052 /* Build configuration list for PBXProject "ZMGeofencingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A230C57F19AE47420022D052 /* Debug */,
+				A230C58019AE47420022D052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A230C58119AE47420022D052 /* Build configuration list for PBXNativeTarget "ZMGeofencingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A230C58219AE47420022D052 /* Debug */,
+				A230C58319AE47420022D052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A230C58419AE47420022D052 /* Build configuration list for PBXNativeTarget "ZMGeofencingAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A230C58519AE47420022D052 /* Debug */,
+				A230C58619AE47420022D052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A230C54D19AE47410022D052 /* Project object */;
+}
