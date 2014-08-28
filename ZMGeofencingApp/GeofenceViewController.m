@@ -62,7 +62,7 @@
     /* Setup background, textColor, text alignment */
     
     geofenceLabel.backgroundColor = BACKGROUND_COLOR;
-    geofenceLabel.tintColor = TEXT_COLOR;
+    geofenceLabel.textColor = TEXT_COLOR;
     geofenceLabel.textAlignment = NSTextAlignmentCenter;
 
 }
@@ -142,8 +142,6 @@
         
     }
     
-        /* ====================================FIGURE OUT HOW TO MONITOR REGIONS ===================================================== */
-    
     if ([CLLocationManager locationServicesEnabled]==FALSE ||
         [CLLocationManager authorizationStatus] == kCLAuthorizationStatusDenied) {
         
@@ -153,6 +151,8 @@
         
         
     } else if (UIApplication.sharedApplication.backgroundRefreshStatus != UIBackgroundRefreshStatusAvailable) {
+        
+        /*============= This is needed to confirm so that notifications can be sent when application is in background ==============*/
         
         [self showLocationManagerErrorAlert:@"Enable App Refresh in phone settings, if you would like to access apps full capabilities."
                                   withTitle:@"Background Location Services Disabled"];
@@ -202,7 +202,7 @@
 -(void)locationManager:(CLLocationManager *)locationManager didUpdateLocations:(NSArray *)locations
 {
     
-    /* Allow location manager to defer updates, based on "Active" or "Background" status */
+    /* Allow location manager to defer updates, based on "Active" or "Background" status to limit batter drain */
     
     CLLocation *newLocation = [locations lastObject];
     
